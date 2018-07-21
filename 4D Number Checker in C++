@@ -1,0 +1,65 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	//For user to key in 4 values
+	int numberall, numbersum, i;
+	bool isPrime = true;
+	int numberone, numbertwo, numberthree, numberfour;
+	printf("Please Enter First Digit   ");
+	cin >> numberone;
+	cout << "You have keyed in   " << numberone << endl;
+	printf("Please Enter Second Digit   ");
+	cin >> numbertwo;
+	cout << "You have keyed in   " << numbertwo << endl;
+	printf("Please Enter Third Digit   ");
+	cin >> numberthree;
+	cout << "You have keyed in   " << numberthree << endl;
+	printf("Please Enter Fourth Digit   ");
+	cin >> numberfour;
+	cout << "You have keyed in   " << numberfour << endl;
+	numberall = numberone * 1000 + numbertwo * 100 + numberthree * 10 + numberfour;
+	cout << "The number you have keyed in is   " << numberall << endl;
+	numbersum = numberone + numbertwo + numberthree + numberfour;
+	cout << "The sum of all the numbers is     " << numbersum << endl;
+
+
+	//Check how many identical numbers
+	if (numberone == numbertwo && numberone == numbertwo && numbertwo == numberthree && numberthree == numberfour)
+		cout << "There are four identical numbers." << endl;
+	else if (numberone == numbertwo && numberone == numberthree || numberone == numbertwo && numberone == numberfour || numbertwo == numberthree && numbertwo == numberfour)
+		cout << "There are three identical numbers." << endl;
+	else if (numberone == numbertwo || numberone == numberthree || numberone == numberfour || numbertwo == numberthree || numbertwo == numberfour || numberthree == numberfour)
+		cout << "There are two identical numbers." << endl;
+	else
+		cout << "There are no identical numbers" << endl;
+
+	if (numberfour % 2 == 0)
+		cout << "Number is even." <<endl;
+	else
+		cout << "Number is odd." << endl;
+
+
+	//Check if number is prime number
+	for (i = 2; i <= numberall / 2; ++i)
+	{
+		if (numberall % i == 0)
+		{
+			isPrime = false;
+			break;
+		}
+	}
+	if (isPrime)
+		cout << "This is a prime number";
+	else
+		cout << "This is not a prime number";
+	system("pause");	
+    return 0;
+}
+
