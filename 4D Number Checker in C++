@@ -38,7 +38,7 @@ int main()
 	else if (numberone == numbertwo || numberone == numberthree || numberone == numberfour || numbertwo == numberthree || numbertwo == numberfour || numberthree == numberfour)
 		cout << "There are two identical numbers." << endl;
 	else
-		cout << "There are no identical numbers" << endl;
+		cout << "There are no identical numbers." << endl;
 
 	if (numberfour % 2 == 0)
 		cout << "Number is even." <<endl;
@@ -56,9 +56,9 @@ int main()
 		}
 	}
 	if (isPrime)
-		cout << "This is a prime number";
+		cout << "This is a prime number.";
 	else
-		cout << "This is not a prime number";
+		cout << "This is not a prime number.";
 	system("pause");	
     return 0;
 }
