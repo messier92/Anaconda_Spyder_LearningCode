@@ -88,7 +88,7 @@ void write_product()
 void display_all()
 {
 	system("CLS");
-	cout << "\n\n\n\t\tDISPLAY ALL RECORD !!!\n\n";
+	cout << "\n\n\n\t\tDISPLAY ALL RECORDS !!!\n\n";
 	fp.open("Shop.dat", ios::in);
 	while (fp.read((char*)&pr, sizeof(product)))
 	{
@@ -117,7 +117,7 @@ void display_sp(int n)
 	}
 	fp.close();
 	if (flag == 0)
-		cout << "\n\nrecord not exist";
+		cout << "\n\nRecord does not exist";
 	cin.get();
 }
 //***************************************************************
@@ -175,7 +175,7 @@ void delete_product()
 	fp.close();
 	remove("Shop.dat");
 	rename("Temp.dat", "Shop.dat");
-	cout << "\n\n\tRecord Deleted ..";
+	cout << "\n\n\tRecord Deleted";
 	cin.get();
 }
 //***************************************************************
@@ -193,7 +193,6 @@ void menu()
 		cin.get();
 		exit(0);
 	}
-
 	cout << "\n\n\t\tProduct MENU\n\n";
 	cout << "====================================================\n";
 	cout << "P.NO.\t\tNAME\t\tPRICE\n";
@@ -205,7 +204,6 @@ void menu()
 	}
 	fp.close();
 }
-
 
 //***************************************************************
 // function to place order and generating bill for Products
@@ -262,7 +260,7 @@ void intro()
 {
 	system("CLS");
 	cout << "SUPER MARKET BILLING PROJECT";
-	cout << "\n\nMADE BY : ANUJ KUMAR, TAKEN FROM : http://www.cppforschool.com/projects.html";
+	cout << "\n\nMADE BY : ANUJ KUMAR";
 	cout << "\n\nMODIFIED FOR VISUAL STUDIO 2017 BY : EUGENE GOH";
 	cout << "\n\nPRESS ENTER TO CONTINUE...";
 	cout << "\n\n";
@@ -279,12 +277,10 @@ void admin_menu()
 	cout << "\n\n\n\tADMIN MENU";
 	cout << "\n\n\t1.CREATE PRODUCT";
 	cout << "\n\n\t2.DISPLAY ALL PRODUCTS";
-	cout << "\n\n\t3.QUERY ";
-	cout << "\n\n\t4.MODIFY PRODUCT";
-	cout << "\n\n\t5.DELETE PRODUCT";
-	cout << "\n\n\t6.VIEW PRODUCT MENU";
-	cout << "\n\n\t7.BACK TO MAIN MENU";
-	cout << "\n\n\tPlease Enter Your Choice (1-7) ";
+	cout << "\n\n\t3.MODIFY PRODUCT";
+	cout << "\n\n\t4.DELETE PRODUCT";
+	cout << "\n\n\t5.BACK TO MAIN MENU";
+	cout << "\n\n\tPlease Enter Your Choice (1-5) ";
 	ch2 = cin.get();
 	switch (ch2)
 	{
@@ -292,18 +288,9 @@ void admin_menu()
 		write_product();
 		break;
 	case '2': display_all(); break;
-	case '3':
-		int num;
-		system("CLS");
-		cout << "\n\n\tPlease Enter The Product No. ";
-		cin >> num;
-		display_sp(num);
-		break;
-	case '4': modify_product(); break;
-	case '5': delete_product(); break;
-	case '6': menu();
-		cin.get();
-	case '7': break;
+	case '3': modify_product(); break;
+	case '4': delete_product(); break;
+	case '5': break;
 	default:cout << "\a"; admin_menu();
 	}
 }
@@ -340,3 +327,4 @@ int main()
 //***************************************************************
 // END OF PROJECT
 //***************************************************************
+
