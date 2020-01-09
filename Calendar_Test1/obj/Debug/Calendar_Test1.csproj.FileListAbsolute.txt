@@ -1,0 +1,16 @@
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\App.g.cs
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1_MarkupCompile.cache
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1_MarkupCompile.lref
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\bin\Debug\Calendar_Test1.exe.config
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\bin\Debug\Calendar_Test1.exe
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\bin\Debug\Calendar_Test1.pdb
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\MainWindow.g.cs
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\MainWindow.baml
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Themes\Generic.baml
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1.g.resources
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1.Properties.Resources.resources
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1.csproj.GenerateResource.cache
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1.exe
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1.pdb
+C:\Users\Eugene Goh\source\repos\Calendar_Test1\obj\Debug\Calendar_Test1.csprojAssemblyReference.cache
